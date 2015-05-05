@@ -22,14 +22,14 @@ get('/lists') do
   erb(:lists)
 end
 
-get('/tasks/new') do
-  erb(:tasks_form)
-end
+# get('/tasks/new') do
+#   erb(:tasks_form)
+# end
 
-get('/tasks') do
-  @tasks = Task.all()
-  erb(:tasks)
-end
+# get('/tasks') do
+#   @tasks = Task.all()
+#   erb(:tasks)
+# end
 
 post('/lists') do
   name = params.fetch('name')

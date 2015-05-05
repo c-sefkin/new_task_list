@@ -3,7 +3,7 @@
 <p>Add a task here:</p>
 
 <form action=":/tasks" method="post">
-  <input id="list_id" name="list_id" type="hidden" value="<%= @list.id() %>">
+  <input id="list_id" name="list_id" type="hidden" value=<%= @list.id() %> >
 
   <label for="description">Task:</label>
   <input id="description" name="description" type="text">
